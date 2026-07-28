@@ -34,6 +34,23 @@ NextAI Research Institute, Chery Group.
   <img src="assets/framework.png"  height=600>
 </p>
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/case1-1.gif" alt="Case 1" width="800">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/case2-1.gif" alt="Case 2" width="800">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/case3-1.gif" alt="Case 3" width="800">
+    </td>
+  </tr>
+</table>
 
 ## &#x1F4E3; Updates
 * [2026.07.28] 🔥 Our [paper](https://arxiv.org/pdf/2607.23955) is in public on arxiv.
