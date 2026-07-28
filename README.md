@@ -34,6 +34,7 @@ NextAI Research Institute, Chery Group.
   <img src="assets/framework.png"  height=600>
 </p>
 
+
 ## &#x1F4E3; Updates
 * [2026.07.28] 🔥 Our [paper](https://arxiv.org/pdf/2607.23955) is in public on arxiv.
 
