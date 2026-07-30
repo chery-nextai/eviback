@@ -63,14 +63,7 @@ retrieval, evaluation, and environment components needed to reproduce the method
 E2E-APE supplies the development-time prompt-engineering instructions used to
 freeze the Teacher prompt. it is not used during Actor inference.
 
-## Release status
-This directory is a functional source release candidate, not a publishable
-release. The project license, exact formal environment, dataset redistribution,
-VERL upstream revision, and one E2E-APE benchmark hash are still unresolved.
-See `release/blockers.md`. Raw datasets, corpus/index files, model weights,
-checkpoints, logs, and raw Teacher responses are intentionally absent.
-
-## Install
+## 🔧 Install
 
 Choose one accelerator profile before installing:
 
