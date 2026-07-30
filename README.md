@@ -190,9 +190,9 @@ misaligned `(data_source, index)` keys and mismatched question text.
 
 |     Models     | Download Link HuggingFace | Download Link ModelScope |
 |:--------------:|:-------------------------:|:------------------------:|
-|   QWen3-0.6B   |   🤗 [HuggingFace]()      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-0.6b)      |
-|   QWen3-1.7B   |   🤗 [HuggingFace]()      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-1.7b)      |
-|    QWen3-4B    |   🤗 [HuggingFace]()      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-4b)      |
+|   QWen3-0.6B   |   🤗 [HuggingFace](https://huggingface.co/chery-nextai/eviback/tree/main/qwen3-0.6b)      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-0.6b)      |
+|   QWen3-1.7B   |   🤗 [HuggingFace](https://huggingface.co/chery-nextai/eviback/tree/main/qwen3-1.7b)      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-1.7b)      |
+|    QWen3-4B    |   🤗 [HuggingFace](https://huggingface.co/chery-nextai/eviback/tree/main/qwen3-4b)      |   🔷 [ModelScope](https://modelscope.cn/models/chery-nextai/eviback/tree/master/qwen3-4b)      |
 
 ```bash
 bash scripts/run_evaluation.sh \
