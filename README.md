@@ -55,68 +55,15 @@ NEXTAI Research Institute, Chery Group.
 ## &#x1F4E3; Updates
 * [2026.07.28] 🔥 Our [paper](https://arxiv.org/pdf/2607.23955) is in public on arxiv.
 
-## Quick Start
-### Environment Setup
-  
-### 🛠️Installation for Linux
-#### 1. Create a conda environment
-
-#### 2. Other dependencies
-```
-pip install -r requirements.txt
-```
-### 🧱Model Preparation
-
-| Models        |                       Download Link                                           |    Notes                      |
-| --------------|-------------------------------------------------------------------------------|-------------------------------|
-|   |      🤗 [Huggingface]()       | Base model
-| |      🤗 [Huggingface]()          | 
-| |      🤗 [Huggingface]()          | 
-
--- The **weights** of EviBack is organized as follows.
-
-```
-./flash/
-├── 
-├── 
-└── diffusion_pytorch_model.safetensors
-```
-
-
-## &#x1F4D2; Citation
-
-If you find our work useful for your research, please consider citing the paper :
-
-```
-@article{ma2026eviback,
-title={Search-Agent Reinforcement Learning via Evidence-Constrained Teacher Backoff},
-  author={Xiao Ma, Zhiquan Hu, Yi Wei, Chenchen Zhao, Yijun Chen, Jicheng Zhao, Yuming Li, Chuang Dai},
-  year={2026},
-  eprint={2607.23955},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI}
-}
-```
-
-## 📜 License
-The models in this repository are licensed under the Apache 2.0 License. We claim no rights over the your generated contents, 
-granting you the freedom to use them while ensuring that your usage complies with the provisions of this license. 
-You are fully accountable for your use of the models, which must not involve sharing any content that violates applicable laws, 
-causes harm to individuals or groups, disseminates personal information intended for harm, spreads misinformation, or targets vulnerable populations. 
-
----
-
-# EviBack
-
+## 💡 Introduction
 EviBack is a search-agent training framework with an Evidence-Constrained
 Teacher. It keeps inference Actor-only and uses the Teacher as a fallback when
 the Actor group receives no useful reward. The package provides the training,
 retrieval, evaluation, and environment components needed to reproduce the method.
 E2E-APE supplies the development-time prompt-engineering instructions used to
-freeze the Teacher prompt; it is not used during Actor inference.
+freeze the Teacher prompt. it is not used during Actor inference.
 
 ## Release status
-
 This directory is a functional source release candidate, not a publishable
 release. The project license, exact formal environment, dataset redistribution,
 VERL upstream revision, and one E2E-APE benchmark hash are still unresolved.
@@ -251,7 +198,7 @@ included. `ape/prompts/frozen_policy.json` records the selected prompt
 identifiers, while `ape/benchmark/` contains metadata and schema only; the raw
 benchmark is not redistributed. See `ape/README.md`.
 
-## Code map
+## 🗺️ Code map
 
 - `src/eviback/teacher/`: Stage A, conditional Stage B, client, merge, provenance
 - `src/eviback/rewards/`: Actor-first all-zero gate and paper reward
@@ -264,3 +211,26 @@ benchmark is not redistributed. See `ape/README.md`.
 
 The current source candidate is designed to fail closed on malformed XML,
 inconsistent group sizes/scales, missing identities, and evaluation misalignment.
+
+## &#x1F4D2; Citation
+
+If you find our work useful for your research, please consider citing the paper :
+
+```
+@article{ma2026eviback,
+title={Search-Agent Reinforcement Learning via Evidence-Constrained Teacher Backoff},
+  author={Xiao Ma, Zhiquan Hu, Yi Wei, Chenchen Zhao, Yijun Chen, Jicheng Zhao, Yuming Li, Chuang Dai},
+  year={2026},
+  eprint={2607.23955},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI}
+}
+```
+
+## 📜 License
+The models in this repository are licensed under the Apache 2.0 License. We claim no rights over the your generated contents, 
+granting you the freedom to use them while ensuring that your usage complies with the provisions of this license. 
+You are fully accountable for your use of the models, which must not involve sharing any content that violates applicable laws, 
+causes harm to individuals or groups, disseminates personal information intended for harm, spreads misinformation, or targets vulnerable populations. 
+
+---
