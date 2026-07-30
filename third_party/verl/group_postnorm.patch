@@ -1,0 +1,59 @@
+diff --git a/verl/trainer/ppo/core_algos.py b/verl/trainer/ppo/core_algos.py
+--- a/verl/trainer/ppo/core_algos.py
++++ b/verl/trainer/ppo/core_algos.py
+@@
+ def compute_grpo_outcome_advantage(
+     token_level_rewards,
+     response_mask,
+     index,
+     epsilon=1e-6,
+     norm_adv_by_std_in_grpo=True,
++    group_postnorm_scales=None,
+     config=None,
+ ):
+@@
+     id2std = {}
++    postnorm_scales = None
++    if group_postnorm_scales is not None:
++        postnorm_scales = np.asarray(group_postnorm_scales, dtype=np.float64)
++        if postnorm_scales.shape != (scores.shape[0],):
++            raise ValueError("group_postnorm_scales must have one value per response")
++        if not np.all(np.isfinite(postnorm_scales)) or np.any(postnorm_scales <= 0.0):
++            raise ValueError("group_postnorm_scales must contain positive finite values")
++        id2scale = {}
++        for i, group_id in enumerate(index):
++            scale = float(postnorm_scales[i])
++            if group_id in id2scale and not np.isclose(id2scale[group_id], scale):
++                raise ValueError("group_postnorm_scales must be constant within each group")
++            id2scale[group_id] = scale
+@@
+             if norm_adv_by_std_in_grpo:
+                 scores[i] = (scores[i] - id2mean[index[i]]) / (id2std[index[i]] + epsilon)
+             else:
+                 scores[i] = scores[i] - id2mean[index[i]]
++            if postnorm_scales is not None:
++                scores[i] = scores[i] * float(postnorm_scales[i])
+
+diff --git a/verl/trainer/ppo/ray_trainer.py b/verl/trainer/ppo/ray_trainer.py
+--- a/verl/trainer/ppo/ray_trainer.py
++++ b/verl/trainer/ppo/ray_trainer.py
+@@
+     elif adv_estimator == AdvantageEstimator.GRPO:
+         grpo_calculation_mask = data.batch["response_mask"]
++        group_postnorm_scales = None
++        scale_key = str(config.get("group_postnorm_advantage_scale_key", "") or "")
++        if scale_key:
++            if not norm_adv_by_std_in_grpo:
++                raise ValueError("post-normalization scaling requires std normalization")
++            if scale_key not in data.non_tensor_batch:
++                raise KeyError(f"missing reward metadata field {scale_key!r}")
++            group_postnorm_scales = np.asarray(
++                data.non_tensor_batch[scale_key], dtype=np.float64
++            )
+         advantages, returns = core_algos.compute_grpo_outcome_advantage(
+             token_level_rewards=data.batch["token_level_rewards"],
+             response_mask=grpo_calculation_mask,
+             index=data.non_tensor_batch["uid"],
+             norm_adv_by_std_in_grpo=norm_adv_by_std_in_grpo,
++            group_postnorm_scales=group_postnorm_scales,
+         )

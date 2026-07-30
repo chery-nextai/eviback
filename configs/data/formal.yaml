@@ -1,0 +1,7 @@
+data:
+  train_manifest: data/manifests/train_5100.json
+  evaluation_manifest: data/manifests/eval_3500.json
+  train_examples: 5100
+  evaluation_questions: 3500
+  train_seed: 26041755
+  evaluation_seed: 42

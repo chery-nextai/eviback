@@ -1,0 +1,11 @@
+evaluation:
+  input: artifacts/data/smoke_eval.jsonl
+  output: artifacts/smoke/inference.jsonl
+  actor_endpoint: ${EVIBACK_ACTOR_ENDPOINT}
+  actor_model: ${EVIBACK_ACTOR_MODEL}
+  retriever_endpoint: ${EVIBACK_RETRIEVER_ENDPOINT}
+  retrieval_top_k: 8
+  visible_top_m: 5
+  max_turns: 4
+  teacher_enabled: false
+  reference_available_to_actor: false

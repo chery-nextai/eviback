@@ -1,0 +1,12 @@
+tools:
+  - class_name: verl.tools.search_r1_tool.SearchR1Tool
+    config:
+      type: native
+      retrieval_service_url: ${oc.env:EVIBACK_RETRIEVER_ENDPOINT}
+      timeout: 30
+      max_retries: 3
+      retry_delay: 1.0
+      retry_backoff: 2.0
+      default_top_n: 50
+      default_top_m: 5
+      use_reranker: false

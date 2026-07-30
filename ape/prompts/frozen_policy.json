@@ -1,0 +1,9 @@
+{
+  "strategy_id": "spad_teacher_hard_gate_r5_literal_canonical_v2",
+  "stage_a_prompt_version": "spad_teacher_evidence_status_answer_v2",
+  "stage_b_prompt_version": "gold_support_evidence_only_v3",
+  "stage_b_scope": "stage_a_non_insufficient",
+  "preserve_insufficiency_boundary": true,
+  "fallback_to_stage_a_on_stage_b_failure": true,
+  "canonicalize_evidence_literal_reference": true
+}

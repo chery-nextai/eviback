@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EviBack evaluation report",
+  "type": "object",
+  "required": ["schema_version", "run_manifest", "summary", "rows"],
+  "properties": {
+    "schema_version": {"const": "eviback_evaluation_v1"},
+    "run_manifest": {
+      "type": "object",
+      "required": ["question_index_hash", "seed", "teacher_used", "reference_used_during_inference"]
+    },
+    "summary": {"type": "object"},
+    "rows": {"type": "array"}
+  }
+}

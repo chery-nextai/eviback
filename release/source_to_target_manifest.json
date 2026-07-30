@@ -1,0 +1,114 @@
+{
+  "entries": [
+    {
+      "source_path": "AgenticIterRag/agentic_iter_rag/agent_training/spad/prompts.py",
+      "target_path": "src/eviback/prompts.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "32f0abe5e6ffa3be656b07e9c51e8f4df2c96f887f0ee9a6a8e4a8c4ec1e9700",
+      "target_sha256": "ca25eae0ab5bba019a8faec3174271446eb72d4334270bdcb0ead9214b88f1a5",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/agentic_iter_rag/agent_training/spad/parsers.py",
+      "target_path": "src/eviback/parsers.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "8044878a2be0f0497121de8901b47bab64edcd94658e76259c1db2790132cf4f",
+      "target_sha256": "47fb2ebbed46284045898f428d6919d7e91cf57d79747419bfbebcdd0d01813b",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/agentic_iter_rag/agent_training/spad/teacher_strategies.py",
+      "target_path": "src/eviback/teacher/strategy.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "f901f8ba4bc3363be37b11bb8468e91e6b000c360a3f2cdd1a5003bfb7aa5d6f",
+      "target_sha256": "c3393cd9fdcebef1f3de81d4267f390149e8ac5725d134842f22cba59cf86e43",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/agentic_iter_rag/agent_training/spad/rewards/search_policy_teacher_reward_gold_match_bonus_v3_hard_gate_v2.py",
+      "target_path": "src/eviback/rewards/eviback_reward.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "b66ed7452191a24522208c6ef9f23c61421e4ba198e4e062ea62a745a95e2179",
+      "target_sha256": "2cdc0456c2dc9c89cf8a3315ca8d2c9673eb6d97669da9a8347a473d0b1c1247",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/agentic_iter_rag/metrics/answer_metrics.py",
+      "target_path": "src/eviback/metrics.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "c16b0c1cb78b935db0feaf9de5988a169f3b84dee0c84702280b7e29e1af65bf",
+      "target_sha256": "fb0827882e9ebb282144c34348c3740310609cd3ae3943fb430210139f7be285",
+      "treatment": "extract",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/verl/verl/trainer/ppo/core_algos.py",
+      "target_path": "src/eviback/training/postnorm.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "eaf9b0520e48e1025e03914b188dc5e2fbba6e982366ee11474ba101292fcdc8",
+      "target_sha256": "8444c38463bdae4e9f9d813c5bda70e41ad3fed5108de0c5708af81ab4b5a40e",
+      "treatment": "extract",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "AgenticIterRag/verl/verl/trainer/ppo/core_algos.py",
+      "target_path": "third_party/verl/group_postnorm.patch",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "eaf9b0520e48e1025e03914b188dc5e2fbba6e982366ee11474ba101292fcdc8",
+      "target_sha256": "f24f74ba2083afe11e8d390d3b6163b3b978e5f08f2ac30ded8485d88dbc073f",
+      "treatment": "patch",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "scripts/cosearch_local/clean_and_sample_cosearch_data.py",
+      "target_path": "src/eviback/data.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "b714c48c6ee80737b3e8bc55b9707bfbfcc4b22f67038c4089da2ffe28337c34",
+      "target_sha256": "f90743f624032190da847c8ceddd89951037bd04af383e33ae53837ab20cee9a",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "scripts/agenticIterRag_v1/assets/infer_backend/infer_air_vllm.py",
+      "target_path": "src/eviback/inference.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "9955c1781da4ecdc6784f060704c5ef822e4377702781386ad89957c12ec427d",
+      "target_sha256": "7d8f23deac500fdf44b6f1eda18fd5e7c3c0c9be9a86aa0629699dec27a6f751",
+      "treatment": "refactor",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "scripts/cosearch_local/aggregate_newdata_model_eval.py",
+      "target_path": "src/eviback/evaluation.py",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "298d7702dbbd704ad8660cac2b3df46676372aad362dd40119bd752ae6fc8703",
+      "target_sha256": "b35f46c4881d60f3081c7b52307f1a3e85dde33a628ba447204ff4ce9c3d584e",
+      "treatment": "extract",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    },
+    {
+      "source_path": "docs/AgenticIterRag_v1/milestone_works/20260723_EviEback_AAAI27_pater_v01/assets/APE/prompt.md",
+      "target_path": "ape/controller_instructions.md",
+      "source_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+      "source_sha256": "62021c025e6f3287f531698c086021c97d6475a45ae3d48df5d1809693f856ff",
+      "target_sha256": "62021c025e6f3287f531698c086021c97d6475a45ae3d48df5d1809693f856ff",
+      "treatment": "prompt",
+      "license": "pending source-level review",
+      "test_status": "covered by release test suite"
+    }
+  ]
+}

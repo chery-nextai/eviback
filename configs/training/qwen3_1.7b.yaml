@@ -1,0 +1,12 @@
+training:
+  model: Qwen/Qwen3-1.7B
+  train_data: artifacts/data/train_5100.parquet
+  eval_data: artifacts/data/eval_3500.parquet
+  retriever_endpoint: ${EVIBACK_RETRIEVER_ENDPOINT}
+  teacher_endpoint: ${EVIBACK_TEACHER_ENDPOINT}
+  teacher_model: ${EVIBACK_TEACHER_MODEL}
+  output_dir: artifacts/training/qwen3_1.7b
+  seed: 42
+  group_size: 8
+  teacher_fallback_scale: 0.1
+  total_training_steps: 79

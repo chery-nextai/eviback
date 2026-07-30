@@ -1,0 +1,8 @@
+# Ascend NPU base environment. Install the pinned NPU wheels from
+# requirements-npu.txt after sourcing the CANN runtime environment.
+name: eviback-npu
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip

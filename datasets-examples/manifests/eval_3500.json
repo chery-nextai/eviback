@@ -1,0 +1,17 @@
+{
+  "kind": "eval",
+  "size": 3500,
+  "seed": 42,
+  "sampling": "stable SHA-256 rank per source; capped equal benchmark quotas",
+  "derived_artifact_sha256": "bc628ed38bc3a99d7ba0ee6056a179c25cc78fcfe818b10a9233ead0256f0283",
+  "source_quotas": {
+    "2wikimultihopqa": 563,
+    "bamboogle": 125,
+    "hotpotqa": 562,
+    "musique": 562,
+    "nq": 562,
+    "popqa": 563,
+    "triviaqa": 563
+  },
+  "distributed": false
+}

@@ -1,0 +1,15 @@
+experiments:
+  - model: Qwen/Qwen3-0.6B
+    config: configs/training/qwen3_1.7b.yaml
+  - model: Qwen/Qwen3-1.7B
+    config: configs/training/qwen3_1.7b.yaml
+  - model: Qwen/Qwen3-4B
+    config: configs/training/qwen3_1.7b.yaml
+lambda_values: [0.1, 0.3, 0.5, 1.0]
+shared:
+  train_examples: 5100
+  evaluation_questions: 3500
+  group_size: 8
+  seed: 42
+  total_training_steps: 79
+  lambda_semantics: post_grpo_group_normalization

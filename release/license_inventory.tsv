@@ -1,0 +1,8 @@
+path_or_component	origin	license	status
+src/eviback	EviBack contributors	PENDING	institutional approval required
+third_party/verl/group_postnorm.patch	volcengine/verl + EviBack modifications	Apache-2.0	upstream revision pending
+Search-R1	https://github.com/PeterGriffinJin/Search-R1	Apache-2.0	not vendored
+vLLM	https://github.com/vllm-project/vllm	Apache-2.0	dependency only
+Transformers	https://github.com/huggingface/transformers	Apache-2.0	dependency only
+Ray	https://github.com/ray-project/ray	Apache-2.0	dependency only
+FAISS	https://github.com/facebookresearch/faiss	MIT	dependency only

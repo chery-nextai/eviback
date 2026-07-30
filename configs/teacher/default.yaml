@@ -1,0 +1,11 @@
+teacher:
+  strategy_id: spad_teacher_hard_gate_r5_literal_canonical_v2
+  stage_a_prompt_version: spad_teacher_evidence_status_answer_v2
+  stage_b_prompt_version: gold_support_evidence_only_v3
+  endpoint: ${EVIBACK_TEACHER_ENDPOINT}
+  model: ${EVIBACK_TEACHER_MODEL}
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 512
+  timeout_seconds: 180
+  visible_top_m: 5

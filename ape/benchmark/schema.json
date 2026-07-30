@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EviBack E2E-APE case",
+  "type": "object",
+  "required": ["case_id", "question", "evidence_steps", "manual_label", "split"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "question": {"type": "string", "minLength": 1},
+    "evidence_steps": {"type": "array"},
+    "manual_label": {"enum": ["S", "I", "A"]},
+    "gold_answers": {"type": "array", "items": {"type": "string"}},
+    "split": {"enum": ["dev", "holdout", "diagnostic"]}
+  }
+}

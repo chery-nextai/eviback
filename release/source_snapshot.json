@@ -1,0 +1,23 @@
+{
+  "snapshot_date": "2026-07-28",
+  "repository_commit": "969a90907c45b2c03b4e1201483f566c2634a060",
+  "repository_dirty": true,
+  "freeze_status": "working-tree snapshot; release tag pending",
+  "actor_models": [
+    "Qwen/Qwen3-0.6B",
+    "Qwen/Qwen3-1.7B",
+    "Qwen/Qwen3-4B"
+  ],
+  "teacher_model": "zai-org/GLM-4.7-Flash",
+  "reward_version": "spad_em_teacher_backoff_gold_token_f1_bonus_v3_hard_gate_v2",
+  "teacher_strategy_id": "spad_teacher_hard_gate_r5_literal_canonical_v2",
+  "source_hashes": {
+    "prompts.py": "32f0abe5e6ffa3be656b07e9c51e8f4df2c96f887f0ee9a6a8e4a8c4ec1e9700",
+    "parsers.py": "8044878a2be0f0497121de8901b47bab64edcd94658e76259c1db2790132cf4f",
+    "teacher_strategies.py": "f901f8ba4bc3363be37b11bb8468e91e6b000c360a3f2cdd1a5003bfb7aa5d6f",
+    "eviback_reward_source.py": "b66ed7452191a24522208c6ef9f23c61421e4ba198e4e062ea62a745a95e2179",
+    "answer_metrics.py": "c16b0c1cb78b935db0feaf9de5988a169f3b84dee0c84702280b7e29e1af65bf",
+    "verl_core_algos.py": "eaf9b0520e48e1025e03914b188dc5e2fbba6e982366ee11474ba101292fcdc8",
+    "verl_ray_trainer.py": "09439ae8ea1619ee47aa06917cf59c813a14cd05515b85de3b115aeddb366d9c"
+  }
+}

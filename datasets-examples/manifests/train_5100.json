@@ -1,0 +1,14 @@
+{
+  "kind": "train",
+  "size": 5100,
+  "seed": 26041755,
+  "sampling": "stable SHA-256 rank per source; largest-remainder quotas",
+  "derived_artifact_sha256": "6e9307a8b3a866ecd045170bc0e92048e7e00fba0a0098b4ced5dd227ba9b09c",
+  "source_quotas": {
+    "2wikimultihopqa": 747,
+    "hotpotqa": 1416,
+    "musique": 897,
+    "nq": 2040
+  },
+  "distributed": false
+}

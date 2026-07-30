@@ -1,0 +1,4 @@
+model:
+  name_or_path: Qwen/Qwen3-1.7B
+  revision: main
+  trust_remote_code: false

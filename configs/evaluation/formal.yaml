@@ -1,0 +1,9 @@
+evaluation:
+  question_count: 3500
+  seed: 42
+  bootstrap_samples: 10000
+  retrieval_top_k: 50
+  visible_top_m: 5
+  max_turns: 10
+  teacher_enabled: false
+  reference_available_to_actor: false

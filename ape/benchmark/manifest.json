@@ -1,0 +1,11 @@
+{
+  "case_count": 512,
+  "question_group_count": 512,
+  "split_counts": {"dev": 384, "holdout": 128},
+  "split_seed": 260715,
+  "split_policy": "32 holdout cases per step layer, label quotas by largest remainder",
+  "current_file_sha256": "ae1e3494d9dc9a189086f70ddc89c94f331cb115a30bdd4b827fb524c72de072",
+  "historical_manifest_sha256": "4e208eafb72795ab6445194daecce3f33e247cf0d105d6714592c91e3d06cd2a",
+  "hash_status": "mismatch_pending_freeze",
+  "benchmark_distributed": false
+}

@@ -1,0 +1,13 @@
+training:
+  model: Qwen/Qwen3-0.6B
+  train_data: artifacts/data/smoke_train.jsonl
+  eval_data: artifacts/data/smoke_eval.jsonl
+  retriever_endpoint: ${EVIBACK_RETRIEVER_ENDPOINT}
+  teacher_endpoint: ${EVIBACK_TEACHER_ENDPOINT}
+  teacher_model: ${EVIBACK_TEACHER_MODEL}
+  output_dir: artifacts/smoke/training
+  seed: 42
+  group_size: 8
+  teacher_fallback_scale: 0.1
+  total_training_steps: 1
+  dry_run: true

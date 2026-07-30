@@ -1,0 +1,7 @@
+retriever:
+  endpoint: ${EVIBACK_RETRIEVER_ENDPOINT}
+  embedding_model: intfloat/e5-base-v2
+  index_revision: user-supplied
+  corpus_revision: user-supplied
+  retrieval_top_k: 50
+  visible_top_m: 5
