@@ -198,15 +198,27 @@ identifiers, while `ape/benchmark/` contains metadata and schema only; the raw
 benchmark is not redistributed. See `ape/README.md`.
 
 ## 🗺️ Code map
-
-- `src/eviback/teacher/`: Stage A, conditional Stage B, client, merge, provenance
-- `src/eviback/rewards/`: Actor-first all-zero gate and paper reward
-- `src/eviback/training/`: VERL adapter and post-normalization reference logic
-- `src/eviback/retrieval/`: retriever client, optional server, public schema
-- `src/eviback/inference.py`: iterative Actor-only search
-- `src/eviback/evaluation.py`: aligned metrics and macro summaries
-- `src/eviback/aggregate.py`: paired bootstrap comparison
-- `release/`: source freeze, environment, licenses, data decision, blockers
+```
+.
+├── src/
+│   └── eviback/
+│       ├── teacher/
+│       │   └── Stage A, conditional Stage B, client, merge, provenance
+│       ├── rewards/
+│       │   └── Actor-first all-zero gate and paper reward
+│       ├── training/
+│       │   └── VERL adapter and post-normalization reference logic
+│       ├── retrieval/
+│       │   └── retriever client, optional server, public schema
+│       ├── inference.py
+│       │   └── iterative Actor-only search
+│       ├── evaluation.py
+│       │   └── aligned metrics and macro summaries
+│       └── aggregate.py
+│           └── paired bootstrap comparison
+└── release/
+    └── source freeze, environment, licenses, data decision, blockers
+```
 
 The current source candidate is designed to fail closed on malformed XML,
 inconsistent group sizes/scales, missing identities, and evaluation misalignment.
