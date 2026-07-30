@@ -94,7 +94,7 @@ training, use the matched `torch-npu` and `vllm-ascend` stack described in
 `docs/install_npu.md`. The complete historical environment is not yet
 recovered; consult `release/environment_snapshot.txt`.
 
-## Prepare data
+##  &#x1F331; Prepare data
 
 Obtain each upstream QA dataset under its own terms and arrange it as described
 in `datasets-examples/README.md`. Build the frozen 5,100/3,500 splits:
@@ -114,7 +114,7 @@ Sampling is a stable SHA-256 order after normalized-question deduplication. The
 manifests publish quotas, seeds, and the original derived-artifact hashes without
 redistributing the data.
 
-## Services
+## &#x1F4C1; Services
 
 Start a Search-R1-compatible dense retriever. Index, corpus, model, host, and
 port are explicit parameters:
@@ -140,7 +140,7 @@ export EVIBACK_TEACHER_ENDPOINT=http://127.0.0.1:8001/v1/chat/completions
 export EVIBACK_TEACHER_MODEL=your-glm-4.7-flash-revision
 ```
 
-## Train
+## &#x1F4C8; Train
 
 Start the formal VERL training job after installing VERL, applying the patch,
 and preparing the datasets and services:
@@ -160,7 +160,7 @@ and seed 42. Model-scale and lambda matrices are documented in
 `configs/training/qwen3_scale_matrix.yaml`. Hardware-specific batch sizes remain
 explicit user overrides because they depend on the available accelerator.
 
-## Evaluate
+## &#x1F4CA; Evaluate
 
 References are joined only after inference. The evaluator rejects duplicate or
 misaligned `(data_source, index)` keys and mismatched question text.
@@ -184,7 +184,7 @@ Reported metrics are legacy EM, token F1, valid-answer rate, mean search calls,
 duplicate-query rate, maximum-turn rate, single-hop macro, multi-hop macro, and
 paired bootstrap confidence intervals.
 
-## E2E-APE
+## &#x1F4CE; E2E-APE
 
 E2E-APE is the project's development-time prompt-engineering process, not a
 runtime component. The public artifacts are the English prompt in
