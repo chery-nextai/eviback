@@ -15,7 +15,7 @@
     <a href='https://github.com/chery-nextai' target='_blank'>Chuang Dai</a>
 </div>
 <div align='center'>
-NextAI Research Institute, Chery Group.
+NEXTAI Research Institute, Chery Group.
 </div>
 <p align='center'>
     <sup>*</sup>Equal Contribution, 
