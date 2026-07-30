@@ -63,6 +63,29 @@ retrieval, evaluation, and environment components needed to reproduce the method
 E2E-APE supplies the development-time prompt-engineering instructions used to
 freeze the Teacher prompt. it is not used during Actor inference.
 
+## 🗺️ Code map
+```
+.
+├── src/
+│   └── eviback/
+│       ├── teacher/
+│       │   └── Stage A, conditional Stage B, client, merge, provenance
+│       ├── rewards/
+│       │   └── Actor-first all-zero gate and paper reward
+│       ├── training/
+│       │   └── VERL adapter and post-normalization reference logic
+│       ├── retrieval/
+│       │   └── retriever client, optional server, public schema
+│       ├── inference.py
+│       │   └── iterative Actor-only search
+│       ├── evaluation.py
+│       │   └── aligned metrics and macro summaries
+│       └── aggregate.py
+│           └── paired bootstrap comparison
+└── release/
+    └── source freeze, environment, licenses, data decision, blockers
+```
+
 ## 🔧 Install
 
 Choose one accelerator profile before installing:
@@ -196,29 +219,6 @@ The generated runner, scorer, ablation, and selection code is intentionally not
 included. `ape/prompts/frozen_policy.json` records the selected prompt
 identifiers, while `ape/benchmark/` contains metadata and schema only; the raw
 benchmark is not redistributed. See `ape/README.md`.
-
-## 🗺️ Code map
-```
-.
-├── src/
-│   └── eviback/
-│       ├── teacher/
-│       │   └── Stage A, conditional Stage B, client, merge, provenance
-│       ├── rewards/
-│       │   └── Actor-first all-zero gate and paper reward
-│       ├── training/
-│       │   └── VERL adapter and post-normalization reference logic
-│       ├── retrieval/
-│       │   └── retriever client, optional server, public schema
-│       ├── inference.py
-│       │   └── iterative Actor-only search
-│       ├── evaluation.py
-│       │   └── aligned metrics and macro summaries
-│       └── aggregate.py
-│           └── paired bootstrap comparison
-└── release/
-    └── source freeze, environment, licenses, data decision, blockers
-```
 
 ## &#x1F4D2; Citation
 
