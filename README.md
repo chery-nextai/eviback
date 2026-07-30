@@ -165,6 +165,12 @@ explicit user overrides because they depend on the available accelerator.
 References are joined only after inference. The evaluator rejects duplicate or
 misaligned `(data_source, index)` keys and mismatched question text.
 
+|     Models     | Download Link HuggingFace | Download Link ModelScope |
+|:--------------:|:-------------------------:|:------------------------:|
+|   QWen3-0.6B   |   🤗 [HuggingFace]()      |   🔷 [ModelScope]()      |
+|   QWen3-1.7B   |   🤗 [HuggingFace]()      |   🔷 [ModelScope]()      |
+|    QWen3-4B    |   🤗 [HuggingFace]()      |   🔷 [ModelScope]()      |
+
 ```bash
 bash scripts/run_evaluation.sh \
   --predictions artifacts/inference/evi_actor.jsonl \
