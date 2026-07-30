@@ -220,9 +220,6 @@ benchmark is not redistributed. See `ape/README.md`.
     └── source freeze, environment, licenses, data decision, blockers
 ```
 
-The current source candidate is designed to fail closed on malformed XML,
-inconsistent group sizes/scales, missing identities, and evaluation misalignment.
-
 ## &#x1F4D2; Citation
 
 If you find our work useful for your research, please consider citing the paper :
