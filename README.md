@@ -53,6 +53,7 @@ NEXTAI Research Institute, Chery Group.
 </table>
 
 ## &#x1F4E3; Updates
+* [2026.07.30] 🔥 We have released the code and models for EviBack.
 * [2026.07.28] 🔥 Our [paper](https://arxiv.org/pdf/2607.23955) is in public on arxiv.
 
 ## 💡 Introduction
